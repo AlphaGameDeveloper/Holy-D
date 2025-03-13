@@ -1,0 +1,18 @@
+// Example demonstrating variable assignment in Holy-D
+
+func:calculate_and_display {
+    assign x = 42;
+    println("The value of x is: " + x);
+    
+    assign greeting = "Hello, World!";
+    println(greeting);
+    
+    assign result = "Adding strings: " + x + greeting;
+    println(result);
+}
+
+enter {
+    println("Testing variable assignment");
+    call calculate_and_display;
+    println("Program completed successfully!");
+}

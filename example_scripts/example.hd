@@ -1,0 +1,25 @@
+func:a {
+    println("Function A called!");
+}
+
+func:b(arg) {
+    println("Function B called with argument" + arg);
+}
+
+func:demo_built_ins {
+    println("Testing sleep function...");
+    call sleep(1);  // Sleep for 1 second
+    println("Awake now!");
+    
+    println("This program would exit now if uncommented:");
+    call exit(0);  // Exit with code 0
+    println("it didn't exit :(");
+}
+
+enter {
+    print("Doing something...");
+    println("Done.");
+
+    call a;
+    call demo_built_ins;
+}

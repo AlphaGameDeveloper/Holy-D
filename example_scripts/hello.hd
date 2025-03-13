@@ -1,0 +1,6 @@
+enter {
+    println("Hello, World!");
+    print("Doing something...");
+    sleep(2);
+    println("Done!");
+}

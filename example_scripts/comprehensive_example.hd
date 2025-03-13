@@ -1,0 +1,50 @@
+// This is a comment in Holy-D language
+// Let's demonstrate all the features we have implemented
+
+// Function definition without parameters
+func:greet {
+    println("Hello, World!");
+}
+
+// Function with a single parameter
+func:personalized_greeting(name) {
+    println("Hello, " + name + "!");
+}
+
+// Function with multiple parameters
+func:calculate_sum(a, b) {
+    println("Sum of " + a + " and " + b + " is: " + a + b);
+    // Note: We haven't implemented numeric operations yet
+}
+
+// Function that calls another function
+func:welcome_user {
+    println("Welcome to Holy-D programming language!");
+    call greet;
+}
+
+// Main entry point of the program
+enter {
+    // Print statements
+    print("Starting the program");
+    println("...");
+    
+    // Function calls
+    call greet;
+    call personalized_greeting("Holy-D User");
+    
+    // Call with multiple arguments
+    call calculate_sum("5", "7");
+    
+    // Nested function calls
+    call welcome_user;
+    
+    // String concatenation
+    println("Holy" + "-" + "D" + " is " + "awesome!");
+    
+    // Parenthesized expressions
+    println("Result: " + ("nested" + " expression"));
+    
+    // Function calls with parentheses syntax
+    println("Program completed successfully!");
+}
