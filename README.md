@@ -32,15 +32,15 @@ pip install -r requirements.txt
 After installation, you can start writing your Holy-D programs. Here’s a simple example:
 
 ```holy-d
-function main() {
-    print("Hello, World!");
+enter {
+    println("Hello, World!");
 }
 ```
 
 To run your Holy-D code, use the interpreter:
 
 ```bash
-python src/mainP.py your_program.holy-d
+python src/main.py your_program.hd
 ```
 
 ## Contributing
